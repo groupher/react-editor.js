@@ -1,5 +1,5 @@
 {
-  "name": "@groupher/react-editor.js",
+  "name": "@groupher/react-editor",
   "version": "1.0.0",
   "description": "React wrapper component for Editor.js",
   "main": "dist/react-editorjs.js",
