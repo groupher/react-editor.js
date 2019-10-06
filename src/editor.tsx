@@ -1,5 +1,5 @@
 import React from 'react';
-import EditorJS, { EditorConfig, OutputData } from '@editorjs/editorjs';
+import EditorJS, { EditorConfig, OutputData } from '@groupher/editor';
 
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
@@ -12,7 +12,6 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
    */
   public editor: EditorJS;
 
-  
   /**
    * Node to append ref
    */
@@ -111,5 +110,4 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
   }
 }
 
-
-export default EditorWrapper
+export default EditorWrapper;
