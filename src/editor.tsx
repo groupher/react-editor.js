@@ -1,6 +1,11 @@
 import React from 'react';
 import EditorJS, { EditorConfig, OutputData } from '@groupher/editor';
 
+import Header from '@groupher/editor-header';
+import Code from '@groupher/editor-code';
+import LinkTool from '@groupher/editor-link';
+import Quote from '@groupher/editor-quote';
+
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
   onData?: (data: OutputData) => void;
@@ -45,6 +50,21 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
 
     this.editor = new EditorJS({
       ...config,
+      tools: {
+        header: Header,
+        code: {
+          class: Code,
+          inlineToolbar: true,
+          // config: {
+          //   lang: 'javascript',
+          // },
+        },
+        linkTool: {
+          class: LinkTool,
+          shortcut: 'CMD+SHIFT+k',
+        },
+        quote: Quote,
+      },
       holder: holderNode,
       onChange: handleChange,
     });
