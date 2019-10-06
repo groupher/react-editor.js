@@ -20,9 +20,8 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
   public editor: EditorJS;
 
   /**
-   * Node to append ref
+   * default id for editor.js holder
    */
-  private node = React.createRef<HTMLDivElement>();
   private defaultHolderId = 'editor-' + new Date().getTime();
 
   componentDidMount() {
@@ -103,16 +102,6 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
     }
 
     return false;
-  };
-
-  getHolderNode = () => {
-    const holder = this.node.current;
-
-    if (!holder) {
-      throw new Error('No node to append Editor.js');
-    }
-
-    return holder;
   };
 
   render() {
