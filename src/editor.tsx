@@ -1,14 +1,16 @@
 import React from 'react';
 import EditorJS, { EditorConfig, OutputData } from '@groupher/editor';
 
+// @ts-ignore
 import Header from '@groupher/editor-header';
-import Code from '@groupher/editor-code';
-import LinkTool from '@groupher/editor-link';
-import Quote from '@groupher/editor-quote';
+// import Code from '@groupher/editor-code';
+// import LinkTool from '@groupher/editor-link';
+// import Quote from '@groupher/editor-quote';
 
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
   onData?: (data: OutputData) => void;
+  holderId?: string;
 }
 
 export class EditorWrapper extends React.PureComponent<WrapperProps> {
@@ -21,6 +23,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
    * Node to append ref
    */
   private node = React.createRef<HTMLDivElement>();
+  private defaultHolderId = 'editor-' + new Date().getTime();
 
   componentDidMount() {
     this.initEditor();
@@ -43,29 +46,20 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
   }
 
   async initEditor() {
-    const { holder, ...config } = this.props;
+    // const { holder: propHolderId, ...config } = this.props;
+    const { holderId: propHolderId } = this.props;
     const { handleChange } = this;
 
-    const holderNode = !holder ? this.getHolderNode() : holder;
+    const holderId = propHolderId ? propHolderId : this.defaultHolderId;
 
     this.editor = new EditorJS({
-      ...config,
+      holderId,
       tools: {
-        header: Header,
-        code: {
-          class: Code,
-          inlineToolbar: true,
-          // config: {
-          //   lang: 'javascript',
-          // },
+        header: {
+          class: Header,
+          inlineToolbar: false,
         },
-        linkTool: {
-          class: LinkTool,
-          shortcut: 'CMD+SHIFT+k',
-        },
-        quote: Quote,
       },
-      holder: holderNode,
       onChange: handleChange,
     });
   }
@@ -122,11 +116,10 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
   };
 
   render() {
-    if (!this.props.holder) {
-      return <div ref={this.node} />;
-    }
+    const { holderId: propHolderId } = this.props;
+    const holderId = !propHolderId ? this.defaultHolderId : propHolderId;
 
-    return null;
+    return <div id={holderId} />;
   }
 }
 
