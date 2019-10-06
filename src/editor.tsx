@@ -3,9 +3,12 @@ import EditorJS, { EditorConfig, OutputData } from '@groupher/editor';
 
 // @ts-ignore
 import Header from '@groupher/editor-header';
-// import Code from '@groupher/editor-code';
-// import LinkTool from '@groupher/editor-link';
-// import Quote from '@groupher/editor-quote';
+// @ts-ignore
+import Code from '@groupher/editor-code';
+// @ts-ignore
+import LinkTool from '@groupher/editor-link';
+// @ts-ignore
+import Quote from '@groupher/editor-quote';
 
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
@@ -58,6 +61,18 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
           class: Header,
           inlineToolbar: false,
         },
+        linkTool: {
+          class: LinkTool,
+          shortcut: 'CMD+SHIFT+k',
+        },
+        code: {
+          class: Code,
+          inlineToolbar: true,
+          config: {
+            lang: 'javascript',
+          },
+        },
+        quote: Quote,
       },
       onChange: handleChange,
     });
