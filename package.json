@@ -1,6 +1,6 @@
 {
   "name": "@groupher/react-editor",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "React wrapper component for Editor.js",
   "main": "dist/react-editorjs.js",
   "umd:main": "dist/react-editorjs.umd.js",
