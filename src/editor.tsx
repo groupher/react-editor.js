@@ -9,6 +9,10 @@ import Code from '@groupher/editor-code';
 import LinkTool from '@groupher/editor-link';
 // @ts-ignore
 import Quote from '@groupher/editor-quote';
+// @ts-ignore
+import Delimiter from '@groupher/editor-delimiter';
+// @ts-ignore
+import InlineCode from '@editorjs/inline-code';
 
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
@@ -73,6 +77,11 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
           },
         },
         quote: Quote,
+        delimiter: Delimiter,
+        inlineCode: {
+          class: InlineCode,
+          shortcut: 'CMD+SHIFT+M',
+        },
       },
       onChange: handleChange,
     });

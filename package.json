@@ -41,8 +41,10 @@
     "react": "^16.x"
   },
   "dependencies": {
+    "@editorjs/inline-code": "^1.3.0",
     "@groupher/editor": "^2.15.2",
     "@groupher/editor-code": "^1.0.17",
+    "@groupher/editor-delimiter": "^1.1.1",
     "@groupher/editor-header": "^2.3.0",
     "@groupher/editor-link": "^2.1.4",
     "@groupher/editor-quote": "^2.3.1",

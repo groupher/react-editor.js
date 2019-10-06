@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.6.0/libexec/bin/yarn.js add @groupher/editor-code @groupher/editor-header @groupher/editor-link @groupher/editor-quote
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.6.0/libexec/bin/yarn.js add @groupher/editor-delimiter
 
 PATH: 
   /Users/xieyiming/code/android-sdk-macosx/tools:/Users/xieyiming/code/android-sdk-macosx/platforms:/Users/xieyiming/.autojump/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin
@@ -14,12 +14,12 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/Users/xieyiming/code/groupher/react-editor.js/node_modules/.bin/atob'
+  Error: EACCES: permission denied, unlink '/Users/xieyiming/code/groupher/react-editor.js/node_modules/.bin/acorn'
 
 npm manifest: 
   {
     "name": "@groupher/react-editor",
-    "version": "1.0.1",
+    "version": "1.0.16",
     "description": "React wrapper component for Editor.js",
     "main": "dist/react-editorjs.js",
     "umd:main": "dist/react-editorjs.umd.js",
@@ -60,7 +60,12 @@ npm manifest:
       "react": "^16.x"
     },
     "dependencies": {
+      "@editorjs/inline-code": "^1.3.0",
       "@groupher/editor": "^2.15.2",
+      "@groupher/editor-code": "^1.0.17",
+      "@groupher/editor-header": "^2.3.0",
+      "@groupher/editor-link": "^2.1.4",
+      "@groupher/editor-quote": "^2.3.1",
       "react": "^16.8.6",
       "react-dom": "^16.8.6"
     }
@@ -792,7 +797,7 @@ Lockfile:
       pirates "^4.0.0"
       source-map-support "^0.5.9"
   
-  "@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.0", "@babel/runtime@^7.6.2":
+  "@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.0", "@babel/runtime@^7.6.2":
     version "7.6.2"
     resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.6.2.tgz?cache=0&sync_timestamp=1569273822239&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.6.2.tgz#c3d6e41b304ef10dcf13777a33e7694ec4a9a6dd"
     dependencies:
@@ -831,6 +836,10 @@ Lockfile:
       esutils "^2.0.2"
       lodash "^4.17.13"
       to-fast-properties "^2.0.0"
+  
+  "@editorjs/inline-code@^1.3.0":
+    version "1.3.0"
+    resolved "https://registry.npm.taobao.org/@editorjs/inline-code/download/@editorjs/inline-code-1.3.0.tgz#66b915d2c128ba520ba4b245067d40851d78355a"
   
   "@emotion/babel-plugin-jsx-pragmatic@^0.1.3":
     version "0.1.3"
@@ -955,6 +964,26 @@ Lockfile:
       relay-runtime "2.0.0"
       signedsource "^1.0.0"
       yargs "^9.0.0"
+  
+  "@groupher/editor-code@^1.0.17":
+    version "1.0.17"
+    resolved "https://registry.npm.taobao.org/@groupher/editor-code/download/@groupher/editor-code-1.0.17.tgz#5915b571a854ac391678950a0cd9999345d9389c"
+    dependencies:
+      prismjs "^1.17.1"
+  
+  "@groupher/editor-header@^2.3.0":
+    version "2.3.0"
+    resolved "https://registry.npm.taobao.org/@groupher/editor-header/download/@groupher/editor-header-2.3.0.tgz#6dfc73c6dea000ccfa7a0979655d2480d0114a40"
+  
+  "@groupher/editor-link@^2.1.4":
+    version "2.1.4"
+    resolved "https://registry.npm.taobao.org/@groupher/editor-link/download/@groupher/editor-link-2.1.4.tgz#79758ef5689a98a0aee903e5aca3a5189ace5b26"
+    dependencies:
+      "@babel/runtime" "^7.3.1"
+  
+  "@groupher/editor-quote@^2.3.1":
+    version "2.3.1"
+    resolved "https://registry.npm.taobao.org/@groupher/editor-quote/download/@groupher/editor-quote-2.3.1.tgz#bf64b0ae5293fc60ffa4b934da7380f6d1ece296"
   
   "@groupher/editor@^2.15.2":
     version "2.15.2"
@@ -2749,6 +2778,14 @@ Lockfile:
     version "2.2.0"
     resolved "https://registry.npm.taobao.org/cli-width/download/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
   
+  clipboard@^2.0.0:
+    version "2.0.4"
+    resolved "https://registry.npm.taobao.org/clipboard/download/clipboard-2.0.4.tgz#836dafd66cf0fea5d71ce5d5b0bf6e958009112d"
+    dependencies:
+      good-listener "^1.2.2"
+      select "^1.1.2"
+      tiny-emitter "^2.0.0"
+  
   clipboardy@^2.1.0:
     version "2.1.0"
     resolved "https://registry.npm.taobao.org/clipboardy/download/clipboardy-2.1.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fclipboardy%2Fdownload%2Fclipboardy-2.1.0.tgz#0123a0c8fac92f256dc56335e0bb8be97a4909a5"
@@ -3663,6 +3700,10 @@ Lockfile:
   delayed-stream@~1.0.0:
     version "1.0.0"
     resolved "https://registry.npm.taobao.org/delayed-stream/download/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
+  
+  delegate@^3.1.2:
+    version "3.2.0"
+    resolved "https://registry.npm.taobao.org/delegate/download/delegate-3.2.0.tgz#b66b71c3158522e8ab5744f720d8ca0c2af59166"
   
   delegates@^1.0.0:
     version "1.0.0"
@@ -5598,6 +5639,12 @@ Lockfile:
   globrex@^0.1.1:
     version "0.1.2"
     resolved "https://registry.npm.taobao.org/globrex/download/globrex-0.1.2.tgz#dd5d9ec826232730cd6793a5e33a9302985e6098"
+  
+  good-listener@^1.2.2:
+    version "1.2.2"
+    resolved "https://registry.npm.taobao.org/good-listener/download/good-listener-1.2.2.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
+    dependencies:
+      delegate "^3.1.2"
   
   got@8.3.2:
     version "8.3.2"
@@ -9468,6 +9515,12 @@ Lockfile:
     version "0.1.7"
     resolved "https://registry.npm.taobao.org/prism-react-renderer/download/prism-react-renderer-0.1.7.tgz#dc273d0cb6e4a498ba0775094e9a8b01a3ad2eaa"
   
+  prismjs@^1.17.1:
+    version "1.17.1"
+    resolved "https://registry.npm.taobao.org/prismjs/download/prismjs-1.17.1.tgz#e669fcbd4cdd873c35102881c33b14d0d68519be"
+    optionalDependencies:
+      clipboard "^2.0.0"
+  
   private@^0.1.6, private@^0.1.8:
     version "0.1.8"
     resolved "https://registry.npm.taobao.org/private/download/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
@@ -10746,6 +10799,10 @@ Lockfile:
     version "2.0.0"
     resolved "https://registry.npm.taobao.org/select-hose/download/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
   
+  select@^1.1.2:
+    version "1.1.2"
+    resolved "https://registry.npm.taobao.org/select/download/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
+  
   selfsigned@^1.10.7:
     version "1.10.7"
     resolved "https://registry.npm.taobao.org/selfsigned/download/selfsigned-1.10.7.tgz?cache=0&sync_timestamp=1569952074772&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fselfsigned%2Fdownload%2Fselfsigned-1.10.7.tgz#da5819fd049d5574f28e88a9bcc6dbc6e6f3906b"
@@ -11643,6 +11700,10 @@ Lockfile:
   timsort@^0.3.0:
     version "0.3.0"
     resolved "https://registry.npm.taobao.org/timsort/download/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
+  
+  tiny-emitter@^2.0.0:
+    version "2.1.0"
+    resolved "https://registry.npm.taobao.org/tiny-emitter/download/tiny-emitter-2.1.0.tgz#1d1a56edfc51c43e863cbb5382a72330e3555423"
   
   tiny-glob@^0.2.6:
     version "0.2.6"
