@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.6.0/libexec/bin/yarn.js upgrade @groupher/editor-delimiter@1.1.2
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.6.0/libexec/bin/yarn.js upgrade @groupher/editor-delimiter@1.1.3
 
 PATH: 
   /Users/xieyiming/code/android-sdk-macosx/tools:/Users/xieyiming/code/android-sdk-macosx/platforms:/Users/xieyiming/.autojump/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin
@@ -14,12 +14,12 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/Users/xieyiming/code/groupher/react-editor.js/node_modules/.bin/acorn'
+  Error: EACCES: permission denied, unlink '/Users/xieyiming/code/groupher/react-editor.js/node_modules/.bin/ansi-html'
 
 npm manifest: 
   {
     "name": "@groupher/react-editor",
-    "version": "1.0.18",
+    "version": "1.0.19",
     "description": "React wrapper component for Editor.js",
     "main": "dist/react-editorjs.js",
     "umd:main": "dist/react-editorjs.umd.js",
@@ -63,7 +63,7 @@ npm manifest:
       "@editorjs/inline-code": "^1.3.0",
       "@groupher/editor": "^2.15.2",
       "@groupher/editor-code": "^1.0.17",
-      "@groupher/editor-delimiter": "^1.1.1",
+      "@groupher/editor-delimiter": "1.1.2",
       "@groupher/editor-header": "^2.3.0",
       "@groupher/editor-link": "^2.1.4",
       "@groupher/editor-quote": "^2.3.1",
@@ -972,9 +972,9 @@ Lockfile:
     dependencies:
       prismjs "^1.17.1"
   
-  "@groupher/editor-delimiter@^1.1.1":
-    version "1.1.1"
-    resolved "https://registry.npm.taobao.org/@groupher/editor-delimiter/download/@groupher/editor-delimiter-1.1.1.tgz?cache=0&sync_timestamp=1570374214319&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40groupher%2Feditor-delimiter%2Fdownload%2F%40groupher%2Feditor-delimiter-1.1.1.tgz#653d61291d142ead66ab689039a729e924dd09cc"
+  "@groupher/editor-delimiter@1.1.2":
+    version "1.1.2"
+    resolved "https://registry.npm.taobao.org/@groupher/editor-delimiter/download/@groupher/editor-delimiter-1.1.2.tgz#f356771d43d702efc2d9a91c944f5b03d7a04039"
   
   "@groupher/editor-header@^2.3.0":
     version "2.3.0"
