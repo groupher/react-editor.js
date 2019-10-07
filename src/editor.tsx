@@ -77,7 +77,12 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
           },
         },
         quote: Quote,
-        delimiter: Delimiter,
+        delimiter: {
+          class: Delimiter,
+          toolbox: {
+            title: '分割线',
+          },
+        },
         inlineCode: {
           class: InlineCode,
           shortcut: 'CMD+SHIFT+M',
