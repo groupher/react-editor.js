@@ -14,7 +14,7 @@ import Delimiter from '@groupher/editor-delimiter';
 // @ts-ignore
 import InlineCode from '@editorjs/inline-code';
 // @ts-ignore
-import Code from '@groupher/editor-code';
+import Embed from '@groupher/editor-embed';
 
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
@@ -91,6 +91,10 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         inlineCode: {
           class: InlineCode,
           shortcut: 'CMD+SHIFT+I',
+        },
+        embed: {
+          class: Embed,
+          shortcut: 'CMD+SHIFT+E',
         },
       },
       onChange: handleChange,
