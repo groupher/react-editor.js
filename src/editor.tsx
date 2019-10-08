@@ -13,6 +13,8 @@ import Quote from '@groupher/editor-quote';
 import Delimiter from '@groupher/editor-delimiter';
 // @ts-ignore
 import InlineCode from '@editorjs/inline-code';
+// @ts-ignore
+import Code from '@groupher/editor-code';
 
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
