@@ -103,6 +103,9 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         warning: {
           class: Warning,
           shortcut: 'CMD+SHIFT+W',
+          config: {
+            i18n: 'zh',
+          },
         },
         table: {
           class: Table,

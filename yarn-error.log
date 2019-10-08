@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.6.0/libexec/bin/yarn.js add @groupher/editor-table
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.6.0/libexec/bin/yarn.js upgrade @groupher/editor-warning@1.0.2
 
 PATH: 
   /Users/xieyiming/code/android-sdk-macosx/tools:/Users/xieyiming/code/android-sdk-macosx/platforms:/Users/xieyiming/.autojump/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin
@@ -19,7 +19,7 @@ Trace:
 npm manifest: 
   {
     "name": "@groupher/react-editor",
-    "version": "1.0.29",
+    "version": "1.0.30",
     "description": "React wrapper component for Editor.js",
     "main": "dist/react-editorjs.js",
     "umd:main": "dist/react-editorjs.umd.js",
@@ -68,6 +68,7 @@ npm manifest:
       "@groupher/editor-header": "2.3.1",
       "@groupher/editor-link": "2.1.6",
       "@groupher/editor-quote": "2.3.2",
+      "@groupher/editor-table": "^1.0.1",
       "@groupher/editor-warning": "^1.0.1",
       "react": "^16.8.6",
       "react-dom": "^16.8.6"
@@ -968,9 +969,9 @@ Lockfile:
       signedsource "^1.0.0"
       yargs "^9.0.0"
   
-  "@groupher/editor-code@^1.0.17":
-    version "1.0.17"
-    resolved "https://registry.npm.taobao.org/@groupher/editor-code/download/@groupher/editor-code-1.0.17.tgz#5915b571a854ac391678950a0cd9999345d9389c"
+  "@groupher/editor-code@1.0.18":
+    version "1.0.18"
+    resolved "https://registry.npm.taobao.org/@groupher/editor-code/download/@groupher/editor-code-1.0.18.tgz#96eb4e1be85dc22bad25995179476b1711041bf3"
     dependencies:
       prismjs "^1.17.1"
   
@@ -978,23 +979,38 @@ Lockfile:
     version "1.1.4"
     resolved "https://registry.npm.taobao.org/@groupher/editor-delimiter/download/@groupher/editor-delimiter-1.1.4.tgz#b4c72b9f9c8da70f6fd479aa70740b25db2d0783"
   
-  "@groupher/editor-header@^2.3.0":
-    version "2.3.0"
-    resolved "https://registry.npm.taobao.org/@groupher/editor-header/download/@groupher/editor-header-2.3.0.tgz#6dfc73c6dea000ccfa7a0979655d2480d0114a40"
+  "@groupher/editor-embed@^1.0.1":
+    version "1.0.1"
+    resolved "https://registry.npm.taobao.org/@groupher/editor-embed/download/@groupher/editor-embed-1.0.1.tgz#db52e38b52ef56a20e8f9b6debc010b6d2dae41c"
+    dependencies:
+      svg-inline-loader "^0.8.0"
+      tippy.js "^5.0.1"
   
-  "@groupher/editor-link@^2.1.4":
-    version "2.1.4"
-    resolved "https://registry.npm.taobao.org/@groupher/editor-link/download/@groupher/editor-link-2.1.4.tgz#79758ef5689a98a0aee903e5aca3a5189ace5b26"
+  "@groupher/editor-header@2.3.1":
+    version "2.3.1"
+    resolved "https://registry.npm.taobao.org/@groupher/editor-header/download/@groupher/editor-header-2.3.1.tgz#68a6631969c9bcf229c497729d81de199ed0f8c3"
+  
+  "@groupher/editor-link@2.1.6":
+    version "2.1.6"
+    resolved "https://registry.npm.taobao.org/@groupher/editor-link/download/@groupher/editor-link-2.1.6.tgz#9b4bbadef9e4f48eb1916c00f1c6712e285e341a"
     dependencies:
       "@babel/runtime" "^7.3.1"
   
-  "@groupher/editor-quote@^2.3.1":
-    version "2.3.1"
-    resolved "https://registry.npm.taobao.org/@groupher/editor-quote/download/@groupher/editor-quote-2.3.1.tgz#bf64b0ae5293fc60ffa4b934da7380f6d1ece296"
+  "@groupher/editor-quote@2.3.2":
+    version "2.3.2"
+    resolved "https://registry.npm.taobao.org/@groupher/editor-quote/download/@groupher/editor-quote-2.3.2.tgz#145754462955ff3c4d2c9eba5808cb9fcca783cd"
   
-  "@groupher/editor@^2.15.2":
-    version "2.15.2"
-    resolved "https://registry.npmjs.org/@groupher/editor/-/editor-2.15.2.tgz#c92887b44acd9003d599482b2866d0fe8a519565"
+  "@groupher/editor-table@^1.0.1":
+    version "1.0.1"
+    resolved "https://registry.npm.taobao.org/@groupher/editor-table/download/@groupher/editor-table-1.0.1.tgz?cache=0&sync_timestamp=1570538287913&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40groupher%2Feditor-table%2Fdownload%2F%40groupher%2Feditor-table-1.0.1.tgz#b578f4bf9ad942841edcbd9a759f25c9d0ec73d4"
+  
+  "@groupher/editor-warning@^1.0.1":
+    version "1.0.1"
+    resolved "https://registry.npm.taobao.org/@groupher/editor-warning/download/@groupher/editor-warning-1.0.1.tgz#34c5edc75b9b7a9149924bfa52eb773824c31290"
+  
+  "@groupher/editor@2.15.3":
+    version "2.15.3"
+    resolved "https://registry.npm.taobao.org/@groupher/editor/download/@groupher/editor-2.15.3.tgz#ee64ddead127d1aadb3aa3a8acf4823acf6fd904"
     dependencies:
       codex-notifier "^1.1.2"
   
@@ -7148,7 +7164,7 @@ Lockfile:
     version "2.4.0"
     resolved "https://registry.npm.taobao.org/loader-runner/download/loader-runner-2.4.0.tgz#ed47066bfe534d7e84c4c7b9998c2a75607d9357"
   
-  loader-utils@^0.2.16:
+  loader-utils@^0.2.11, loader-utils@^0.2.16:
     version "0.2.17"
     resolved "https://registry.npm.taobao.org/loader-utils/download/loader-utils-0.2.17.tgz#f86e6374d43205a6e6c60e9196f17c0299bfb348"
     dependencies:
@@ -8881,6 +8897,10 @@ Lockfile:
     resolved "https://registry.npm.taobao.org/pnp-webpack-plugin/download/pnp-webpack-plugin-1.5.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpnp-webpack-plugin%2Fdownload%2Fpnp-webpack-plugin-1.5.0.tgz#62a1cd3068f46d564bb33c56eb250e4d586676eb"
     dependencies:
       ts-pnp "^1.1.2"
+  
+  popper.js@^1.15.0:
+    version "1.15.0"
+    resolved "https://registry.npm.taobao.org/popper.js/download/popper.js-1.15.0.tgz#5560b99bbad7647e9faa475c6b8056621f5a4ff2"
   
   portfinder@^1.0.24:
     version "1.0.24"
@@ -10997,6 +11017,10 @@ Lockfile:
       once "^1.3.1"
       simple-concat "^1.0.0"
   
+  simple-html-tokenizer@^0.1.1:
+    version "0.1.1"
+    resolved "https://registry.npm.taobao.org/simple-html-tokenizer/download/simple-html-tokenizer-0.1.1.tgz#05c2eec579ffffe145a030ac26cfea61b980fabe"
+  
   simple-swizzle@^0.2.2:
     version "0.2.2"
     resolved "https://registry.npm.taobao.org/simple-swizzle/download/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
@@ -11546,6 +11570,14 @@ Lockfile:
     dependencies:
       has-flag "^3.0.0"
   
+  svg-inline-loader@^0.8.0:
+    version "0.8.0"
+    resolved "https://registry.npm.taobao.org/svg-inline-loader/download/svg-inline-loader-0.8.0.tgz#7e9d905d80d0b4e68d2df21afcd08ee9e9a3ea6e"
+    dependencies:
+      loader-utils "^0.2.11"
+      object-assign "^4.0.1"
+      simple-html-tokenizer "^0.1.1"
+  
   svgo@^0.7.0:
     version "0.7.2"
     resolved "https://registry.npm.taobao.org/svgo/download/svgo-0.7.2.tgz?cache=0&sync_timestamp=1563122957434&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsvgo%2Fdownload%2Fsvgo-0.7.2.tgz#9f5772413952135c6fefbf40afe6a4faa88b4bb5"
@@ -11718,6 +11750,12 @@ Lockfile:
     dependencies:
       globalyzer "^0.1.0"
       globrex "^0.1.1"
+  
+  tippy.js@^5.0.1:
+    version "5.0.2"
+    resolved "https://registry.npm.taobao.org/tippy.js/download/tippy.js-5.0.2.tgz#83cdfdceb14e7e4c5afab6ae3ffb0b10f9310c23"
+    dependencies:
+      popper.js "^1.15.0"
   
   title-case@^2.1.0:
     version "2.1.1"
