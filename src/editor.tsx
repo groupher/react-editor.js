@@ -17,6 +17,8 @@ import InlineCode from '@editorjs/inline-code';
 import Embed from '@groupher/editor-embed';
 // @ts-ignore
 import Warning from '@groupher/editor-warning';
+// @ts-ignore
+import Table from '@groupher/editor-table';
 
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
@@ -101,6 +103,13 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         warning: {
           class: Warning,
           shortcut: 'CMD+SHIFT+W',
+        },
+        table: {
+          class: Table,
+          shortcut: 'CMD+SHIFT+T',
+          config: {
+            i18n: 'zh',
+          },
         },
       },
       onChange: handleChange,
