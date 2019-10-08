@@ -64,29 +64,31 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         header: {
           class: Header,
           inlineToolbar: false,
+          shortcut: 'CMD+SHIFT+H',
         },
         linkTool: {
           class: LinkTool,
-          shortcut: 'CMD+SHIFT+k',
+          shortcut: 'CMD+SHIFT+K',
         },
         code: {
           class: Code,
           inlineToolbar: true,
+          shortcut: 'CMD+SHIFT+C',
           config: {
             lang: 'javascript',
           },
         },
         quote: {
           class: Quote,
-          shortcut: 'CMD+SHIFT+Q',
+          shortcut: 'CMD+SHIFT+Y',
         },
         delimiter: {
           class: Delimiter,
-          shortcut: 'CMD+SHIFT+d',
+          shortcut: 'CMD+SHIFT+D',
         },
         inlineCode: {
           class: InlineCode,
-          shortcut: 'CMD+SHIFT+M',
+          shortcut: 'CMD+SHIFT+I',
         },
       },
       onChange: handleChange,
