@@ -76,7 +76,10 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
             lang: 'javascript',
           },
         },
-        quote: Quote,
+        quote: {
+          class: Quote,
+          shortcut: 'CMD+SHIFT+Q',
+        },
         delimiter: {
           class: Delimiter,
           shortcut: 'CMD+SHIFT+d',
