@@ -23,6 +23,8 @@ import Table from '@groupher/editor-table';
 import List from '@groupher/editor-list';
 // @ts-ignore
 import Checklist from '@groupher/editor-checklist';
+// @ts-ignore
+import Image from '@groupher/editor-image';
 
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
@@ -129,6 +131,13 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         Checklist: {
           class: Checklist,
           shortcut: 'CMD+SHIFT+O',
+          config: {
+            ...i18nConf,
+          },
+        },
+        image: {
+          class: Image,
+          shortcut: 'CMD+SHIFT+I',
           config: {
             ...i18nConf,
           },
