@@ -21,6 +21,8 @@ import Warning from '@groupher/editor-warning';
 import Table from '@groupher/editor-table';
 // @ts-ignore
 import List from '@groupher/editor-list';
+// @ts-ignore
+import Checklist from '@groupher/editor-checklist';
 
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
@@ -120,6 +122,13 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         list: {
           class: List,
           shortcut: 'CMD+SHIFT+L',
+          config: {
+            ...i18nConf,
+          },
+        },
+        Checklist: {
+          class: Checklist,
+          shortcut: 'CMD+SHIFT+O',
           config: {
             ...i18nConf,
           },
