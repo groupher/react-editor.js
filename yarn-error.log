@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.6.0/libexec/bin/yarn.js upgrade @groupher/editor-warning@1.0.2
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.6.0/libexec/bin/yarn.js upgrade @groupher/editor-embed@1.0.2
 
 PATH: 
   /Users/xieyiming/code/android-sdk-macosx/tools:/Users/xieyiming/code/android-sdk-macosx/platforms:/Users/xieyiming/.autojump/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin
@@ -14,12 +14,12 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/Users/xieyiming/code/groupher/react-editor.js/node_modules/.bin/acorn'
+  Error: EACCES: permission denied, unlink '/Users/xieyiming/code/groupher/react-editor.js/node_modules/.bin/ansi-html'
 
 npm manifest: 
   {
     "name": "@groupher/react-editor",
-    "version": "1.0.30",
+    "version": "1.0.32",
     "description": "React wrapper component for Editor.js",
     "main": "dist/react-editorjs.js",
     "umd:main": "dist/react-editorjs.umd.js",
@@ -69,7 +69,7 @@ npm manifest:
       "@groupher/editor-link": "2.1.6",
       "@groupher/editor-quote": "2.3.2",
       "@groupher/editor-table": "^1.0.1",
-      "@groupher/editor-warning": "^1.0.1",
+      "@groupher/editor-warning": "1.0.3",
       "react": "^16.8.6",
       "react-dom": "^16.8.6"
     }
@@ -1004,9 +1004,9 @@ Lockfile:
     version "1.0.1"
     resolved "https://registry.npm.taobao.org/@groupher/editor-table/download/@groupher/editor-table-1.0.1.tgz?cache=0&sync_timestamp=1570538287913&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40groupher%2Feditor-table%2Fdownload%2F%40groupher%2Feditor-table-1.0.1.tgz#b578f4bf9ad942841edcbd9a759f25c9d0ec73d4"
   
-  "@groupher/editor-warning@^1.0.1":
-    version "1.0.1"
-    resolved "https://registry.npm.taobao.org/@groupher/editor-warning/download/@groupher/editor-warning-1.0.1.tgz#34c5edc75b9b7a9149924bfa52eb773824c31290"
+  "@groupher/editor-warning@1.0.3":
+    version "1.0.3"
+    resolved "https://registry.npm.taobao.org/@groupher/editor-warning/download/@groupher/editor-warning-1.0.3.tgz#8e75367f8ec0beadb15f5c99c16157d7e127151b"
   
   "@groupher/editor@2.15.3":
     version "2.15.3"
