@@ -19,6 +19,8 @@ import Embed from '@groupher/editor-embed';
 import Warning from '@groupher/editor-warning';
 // @ts-ignore
 import Table from '@groupher/editor-table';
+// @ts-ignore
+import List from '@groupher/editor-list';
 
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
@@ -64,6 +66,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
 
     const holderId = propHolderId ? propHolderId : this.defaultHolderId;
 
+    const i18nConf = { i18n: 'zh' };
     this.editor = new EditorJS({
       holderId,
       tools: {
@@ -104,14 +107,21 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
           class: Warning,
           shortcut: 'CMD+SHIFT+W',
           config: {
-            i18n: 'zh',
+            ...i18nConf,
           },
         },
         table: {
           class: Table,
           shortcut: 'CMD+SHIFT+T',
           config: {
-            i18n: 'zh',
+            ...i18nConf,
+          },
+        },
+        list: {
+          class: List,
+          shortcut: 'CMD+SHIFT+L',
+          config: {
+            ...i18nConf,
           },
         },
       },
