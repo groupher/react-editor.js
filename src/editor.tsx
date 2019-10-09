@@ -130,7 +130,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
             ...i18nConf,
           },
         },
-        Checklist: {
+        checklist: {
           class: Checklist,
           shortcut: 'CMD+SHIFT+O',
           config: {
