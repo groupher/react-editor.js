@@ -25,6 +25,8 @@ import List from '@groupher/editor-list';
 import Checklist from '@groupher/editor-checklist';
 // @ts-ignore
 import Image from '@groupher/editor-image';
+// @ts-ignore
+import Quote from '@groupher/editor-quote';
 
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
