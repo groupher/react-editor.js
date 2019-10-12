@@ -2,6 +2,8 @@ import React from 'react';
 import EditorJS, { EditorConfig, OutputData } from '@groupher/editor';
 
 // @ts-ignore
+import Paragraph from '@groupher/editor-paragraph';
+// @ts-ignore
 import Header from '@groupher/editor-header';
 // @ts-ignore
 import Code from '@groupher/editor-code';
@@ -76,6 +78,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
     this.editor = new EditorJS({
       holderId,
       tools: {
+        paragraph: Paragraph,
         header: {
           class: Header,
           inlineToolbar: false,
