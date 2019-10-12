@@ -5,4 +5,5 @@ lib
 yarn.lock
 .rts2*
 .docz/*
+yarn-error.log
 !.docz/app
