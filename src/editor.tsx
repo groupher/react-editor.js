@@ -132,6 +132,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         list: {
           class: List,
           shortcut: 'CMD+SHIFT+L',
+          inlineToolbar: true,
           config: {
             ...i18nConf,
           },
@@ -139,6 +140,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         checklist: {
           class: Checklist,
           shortcut: 'CMD+SHIFT+O',
+          inlineToolbar: true,
           config: {
             ...i18nConf,
           },
