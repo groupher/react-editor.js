@@ -93,7 +93,6 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         },
         code: {
           class: Code,
-          inlineToolbar: true,
           shortcut: 'CMD+SHIFT+C',
           config: {
             lang: 'javascript',
@@ -117,6 +116,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         },
         warning: {
           class: Warning,
+          inlineToolbar: ['bold', 'link', 'italic', 'inlineCode'],
           shortcut: 'CMD+SHIFT+W',
           config: {
             ...i18nConf,
