@@ -78,7 +78,10 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
     this.editor = new EditorJS({
       holderId,
       tools: {
-        paragraph: Paragraph,
+        paragraph: {
+          class: Paragraph,
+          inlineToolbar: true,
+        },
         header: {
           class: Header,
           inlineToolbar: false,
