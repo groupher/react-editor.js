@@ -55,7 +55,7 @@
     "@groupher/editor-paragraph": "1.0.11",
     "@groupher/editor-quote": "^2.3.3",
     "@groupher/editor-table": "^1.0.1",
-    "@groupher/editor-warning": "1.0.11",
+    "@groupher/editor-warning": "1.0.12",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
