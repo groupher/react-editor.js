@@ -43,6 +43,7 @@
   "dependencies": {
     "@editorjs/inline-code": "^1.3.0",
     "@groupher/editor": "2.15.6",
+    "@groupher/editor-alert": "^1.0.15",
     "@groupher/editor-checklist": "1.1.2",
     "@groupher/editor-code": "1.0.19",
     "@groupher/editor-delimiter": "1.1.6",
@@ -55,7 +56,6 @@
     "@groupher/editor-paragraph": "1.0.11",
     "@groupher/editor-quote": "^2.3.3",
     "@groupher/editor-table": "^1.0.1",
-    "@groupher/editor-warning": "1.0.15",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

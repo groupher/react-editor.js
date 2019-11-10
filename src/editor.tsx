@@ -18,7 +18,7 @@ import InlineCode from '@editorjs/inline-code';
 // @ts-ignore
 import Embed from '@groupher/editor-embed';
 // @ts-ignore
-import Warning from '@groupher/editor-warning';
+import Alert from '@groupher/editor-alert';
 // @ts-ignore
 import Table from '@groupher/editor-table';
 // @ts-ignore
@@ -114,8 +114,8 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
           class: Embed,
           shortcut: 'CMD+SHIFT+E',
         },
-        warning: {
-          class: Warning,
+        alert: {
+          class: Alert,
           inlineToolbar: ['bold', 'link', 'italic', 'inlineCode'],
           shortcut: 'CMD+SHIFT+W',
           config: {
