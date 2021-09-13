@@ -23,9 +23,6 @@
     "baseUrl": "./src",
     "typeRoots": ["./node_modules/@types"]
   },
-  "rules": {
-    "object-literal-sort-keys": false
-  },
   "include": ["src"],
   "exclude": ["./types", "./node_modules/@types"]
 }
