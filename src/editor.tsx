@@ -175,6 +175,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         await this.editor.isReady;
 
         this.editor.destroy();
+        // @ts-ignore
         delete this.editor;
 
         return true;
