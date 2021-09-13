@@ -1,5 +1,5 @@
 import React from 'react';
-import EditorJS, { EditorConfig, OutputData } from '@groupher/editor';
+import EditorJS, { EditorConfig, OutputData } from '@groupher/editor.js';
 
 // @ts-ignore
 import Paragraph from '@groupher/editor-paragraph';
@@ -23,8 +23,6 @@ import Alert from '@groupher/editor-alert';
 import Table from '@groupher/editor-table';
 // @ts-ignore
 import List from '@groupher/editor-list';
-// @ts-ignore
-import Checklist from '@groupher/editor-checklist';
 // @ts-ignore
 import Image from '@groupher/editor-image';
 // @ts-ignore
@@ -137,14 +135,6 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
             ...i18nConf,
           },
         },
-        checklist: {
-          class: Checklist,
-          shortcut: 'CMD+SHIFT+O',
-          inlineToolbar: true,
-          config: {
-            ...i18nConf,
-          },
-        },
         image: {
           class: Image,
           shortcut: 'CMD+SHIFT+I',
@@ -161,7 +151,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
     const { onChange, onData } = this.props;
 
     if (onChange && typeof onChange === 'function') {
-      onChange();
+      // onChange();
     }
 
     if (onData && typeof onData === 'function') {
