@@ -87,7 +87,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         },
         linkTool: {
           class: LinkTool,
-          shortcut: 'CMD+SHIFT+K',
+          // shortcut: 'CMD+SHIFT+K',
         },
         code: {
           class: Code,
