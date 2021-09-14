@@ -28,6 +28,9 @@ import Image from '@groupher/editor-image';
 // @ts-ignore
 import Quote from '@groupher/editor-quote';
 
+// @ts-ignore
+import EventBus from '@groupher/editor-eventbus';
+
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
   onData?: (data: OutputData) => void;
@@ -85,10 +88,12 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
           inlineToolbar: false,
           shortcut: 'CMD+SHIFT+H',
         },
+        /*
         linkTool: {
           class: LinkTool,
-          // shortcut: 'CMD+SHIFT+K',
+          shortcut: 'CMD+SHIFT+K',
         },
+        */
         code: {
           class: Code,
           shortcut: 'CMD+SHIFT+C',
@@ -142,6 +147,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
             ...i18nConf,
           },
         },
+        eventBus: EventBus,
       },
       onChange: handleChange,
     });
