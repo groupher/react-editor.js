@@ -86,7 +86,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         header: {
           class: Header,
           inlineToolbar: false,
-          shortcut: 'CMD+SHIFT+H',
+          // shortcut: 'CMD+SHIFT+H',
         },
         /*
         linkTool: {
@@ -96,45 +96,45 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         */
         code: {
           class: Code,
-          shortcut: 'CMD+SHIFT+C',
+          // shortcut: 'CMD+SHIFT+C',
           config: {
             lang: 'javascript',
           },
         },
         quote: {
           class: Quote,
-          shortcut: 'CMD+SHIFT+Y',
+          // shortcut: 'CMD+SHIFT+Y',
         },
         delimiter: {
           class: Delimiter,
-          shortcut: 'CMD+SHIFT+D',
+          // shortcut: 'CMD+SHIFT+D',
         },
         inlineCode: {
           class: InlineCode,
-          shortcut: 'CMD+SHIFT+I',
+          // shortcut: 'CMD+SHIFT+I',
         },
         embed: {
           class: Embed,
-          shortcut: 'CMD+SHIFT+E',
+          // shortcut: 'CMD+SHIFT+E',
         },
         alert: {
           class: Alert,
           inlineToolbar: ['bold', 'link', 'italic', 'inlineCode'],
-          shortcut: 'CMD+SHIFT+W',
+          // shortcut: 'CMD+SHIFT+W',
           config: {
             ...i18nConf,
           },
         },
         table: {
           class: Table,
-          shortcut: 'CMD+SHIFT+T',
+          // shortcut: 'CMD+SHIFT+T',
           config: {
             ...i18nConf,
           },
         },
         list: {
           class: List,
-          shortcut: 'CMD+SHIFT+L',
+          // shortcut: 'CMD+SHIFT+L',
           inlineToolbar: true,
           config: {
             ...i18nConf,
@@ -142,7 +142,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         },
         image: {
           class: Image,
-          shortcut: 'CMD+SHIFT+I',
+          // shortcut: 'CMD+SHIFT+I',
           config: {
             ...i18nConf,
           },
