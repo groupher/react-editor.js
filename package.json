@@ -1,6 +1,6 @@
 {
   "name": "@groupher/react-editor",
-  "version": "1.0.88",
+  "version": "1.0.89",
   "description": "React wrapper component for Editor.js",
   "main": "dist/react-editorjs.js",
   "umd:main": "dist/react-editorjs.umd.js",
@@ -52,7 +52,7 @@
     "@groupher/editor-image": "1.0.14",
     "@groupher/editor-inline-code": "1.0.3",
     "@groupher/editor-link": "2.1.6",
-    "@groupher/editor-list": "1.4.6",
+    "@groupher/editor-list": "^1.4.7",
     "@groupher/editor-lock": "0.1.2",
     "@groupher/editor-marker": "^1.0.1",
     "@groupher/editor-paragraph": "1.0.14",
