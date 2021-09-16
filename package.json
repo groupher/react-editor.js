@@ -1,6 +1,6 @@
 {
   "name": "@groupher/react-editor",
-  "version": "1.0.92",
+  "version": "1.0.94",
   "description": "React wrapper component for Editor.js",
   "main": "dist/react-editorjs.js",
   "umd:main": "dist/react-editorjs.umd.js",
@@ -44,7 +44,7 @@
     "@editorjs/inline-code": "^1.3.0",
     "@groupher/editor-alert": "1.0.19",
     "@groupher/editor-code": "1.0.26",
-    "@groupher/editor-collapse": "0.1.3",
+    "@groupher/editor-collapse": "^0.1.4",
     "@groupher/editor-delimiter": "1.1.8",
     "@groupher/editor-embed": "1.0.12",
     "@groupher/editor-eventbus": "1.0.6",
@@ -58,7 +58,7 @@
     "@groupher/editor-paragraph": "1.0.14",
     "@groupher/editor-quote": "2.3.5",
     "@groupher/editor-strike": "^0.1.3",
-    "@groupher/editor-table": "^2.0.4",
+    "@groupher/editor-table": "^2.0.5",
     "@groupher/editor.js": "2.19.36",
     "react": "^17.x",
     "react-dom": "17.0.2"

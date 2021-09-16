@@ -27,11 +27,13 @@ import List from '@groupher/editor-list';
 import Image from '@groupher/editor-image';
 // @ts-ignore
 import Quote from '@groupher/editor-quote';
+// @ts-ignore
+import Collapse from '@groupher/editor-collapse';
 
 // @ts-ignore
 import EventBus from '@groupher/editor-eventbus';
 // @ts-ignore
-import Marker from '@groupher/editor-marker';
+// import Marker from '@groupher/editor-marker';
 // @ts-ignore
 import Strike from '@groupher/editor-strike';
 
@@ -135,6 +137,10 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
             ...i18nConf,
           },
         },
+        collapse: {
+          class: Collapse,
+          // inlineToolbar: ["bold", "link", "inlineCode"],
+        },
         image: {
           class: Image,
           config: {
@@ -142,7 +148,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
           },
         },
         eventBus: EventBus,
-        marker: Marker,
+        // fmarker: Marker,
         strike: Strike,
       },
       onChange: handleChange,
