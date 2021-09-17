@@ -139,7 +139,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         },
         collapse: {
           class: Collapse,
-          // inlineToolbar: ["bold", "link", "inlineCode"],
+          inlineToolbar: true,
         },
         image: {
           class: Image,
