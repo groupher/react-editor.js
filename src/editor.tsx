@@ -14,7 +14,8 @@ import Quote from '@groupher/editor-quote';
 // @ts-ignore
 import Delimiter from '@groupher/editor-delimiter';
 // @ts-ignore
-import InlineCode from '@editorjs/inline-code';
+import InlineCode from '@groupher/editor-inline-code';
+
 // @ts-ignore
 import Embed from '@groupher/editor-embed';
 // @ts-ignore
