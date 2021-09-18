@@ -120,7 +120,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         },
         alert: {
           class: Alert,
-          inlineToolbar: ['bold', 'link', 'italic', 'inlineCode'],
+          // inlineToolbar: ['bold', 'link', 'inlineCode'],
           config: {
             ...i18nConf,
           },
