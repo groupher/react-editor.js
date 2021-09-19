@@ -30,13 +30,12 @@ import Image from '@groupher/editor-image';
 import Quote from '@groupher/editor-quote';
 // @ts-ignore
 import Collapse from '@groupher/editor-collapse';
-
 // @ts-ignore
 import EventBus from '@groupher/editor-eventbus';
 // @ts-ignore
-// import Marker from '@groupher/editor-marker';
-// @ts-ignore
 import Strike from '@groupher/editor-strike';
+// @ts-ignore
+import Mention from '@groupher/editor-mention';
 
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
@@ -148,6 +147,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
             ...i18nConf,
           },
         },
+        mention: Mention,
         eventBus: EventBus,
         // fmarker: Marker,
         strike: Strike,
