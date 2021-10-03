@@ -2,6 +2,10 @@ import React from 'react';
 import EditorJS, { EditorConfig, OutputData } from '@groupher/editor.js';
 
 // @ts-ignore
+import Undo from 'editorjs-undo';
+// @ts-ignore
+import DragDrop from 'editorjs-drag-drop';
+// @ts-ignore
 import Paragraph from '@groupher/editor-paragraph';
 // @ts-ignore
 import Header from '@groupher/editor-header';
@@ -88,6 +92,9 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         paragraph: {
           class: Paragraph,
           inlineToolbar: true,
+          config: {
+            preserveBlank: true,
+          },
         },
         header: {
           class: Header,
@@ -153,6 +160,10 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         strike: Strike,
       },
       onChange: handleChange,
+      onReady: () => {
+        new Undo({ editor: this.editor });
+        new DragDrop(this.editor);
+      },
     });
   }
 
