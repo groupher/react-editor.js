@@ -4,9 +4,9 @@ import React from 'react';
 import EditorJS, { EditorConfig, OutputData } from '@groupher/editor.js';
 
 // @ts-ignore
-import Undo from 'editorjs-undo';
+// import Undo from 'editorjs-undo';
 // @ts-ignore
-import DragDrop from 'editorjs-drag-drop';
+// import DragDrop from 'editorjs-drag-drop';
 // @ts-ignore
 import Paragraph from '@groupher/editor-paragraph';
 // @ts-ignore
@@ -162,10 +162,10 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         strike: Strike,
       },
       onChange: handleChange,
-      onReady: () => {
-        new Undo({ editor: this.editor });
-        new DragDrop(this.editor);
-      },
+      // onReady: () => {
+      //   new Undo({ editor: this.editor });
+      //   new DragDrop(this.editor);
+      // },
     });
   }
 
