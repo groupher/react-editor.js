@@ -163,6 +163,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
       onReady: () => {
         new Undo({ editor: this.editor });
         new DragDrop(this.editor);
+        return;
       },
     });
   }
