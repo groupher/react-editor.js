@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-expressions */
+
 import React from 'react';
 import EditorJS, { EditorConfig, OutputData } from '@groupher/editor.js';
 
@@ -161,9 +163,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
       },
       onChange: handleChange,
       onReady: () => {
-        // @ts-ignore
         new Undo({ editor: this.editor });
-        // @ts-ignore
         new DragDrop(this.editor);
       },
     });
