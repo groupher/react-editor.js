@@ -96,6 +96,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
           inlineToolbar: true,
           config: {
             preserveBlank: true,
+            placeholder: "// 正文内容（'Tab' 键快速插入）",
           },
         },
         header: {
