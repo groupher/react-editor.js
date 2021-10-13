@@ -45,6 +45,7 @@ import Mention from '@groupher/editor-mention';
 
 export interface WrapperProps extends EditorConfig {
   reinitOnPropsChange?: boolean;
+  data?: OutputData;
   onData?: (data: OutputData) => void;
   holderId?: string;
 }
@@ -162,6 +163,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
         // fmarker: Marker,
         strike: Strike,
       },
+      data: this.props.data,
       onChange: handleChange,
       onReady: () => {
         new Undo({ editor: this.editor });
