@@ -48,6 +48,7 @@ export interface WrapperProps extends EditorConfig {
   data?: OutputData;
   onData?: (data: OutputData) => void;
   holderId?: string;
+  placeholder?: string;
 }
 
 export class EditorWrapper extends React.PureComponent<WrapperProps> {
@@ -83,7 +84,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
 
   async initEditor() {
     // const { holder: propHolderId, ...config } = this.props;
-    const { holderId: propHolderId } = this.props;
+    const { holderId: propHolderId, placeholder } = this.props;
     const { handleChange } = this;
 
     const holderId = propHolderId ? propHolderId : this.defaultHolderId;
@@ -97,7 +98,7 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
           inlineToolbar: true,
           config: {
             preserveBlank: true,
-            placeholder: "// 正文内容（'Tab' 键快速插入）",
+            placeholder: placeholder || "// 正文内容（'Tab' 键快速插入）",
           },
         },
         header: {
