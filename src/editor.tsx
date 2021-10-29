@@ -44,7 +44,7 @@ import Strike from '@groupher/editor-strike';
 import Mention from '@groupher/editor-mention';
 
 export interface WrapperProps extends EditorConfig {
-  reinitOnPropsChange?: boolean;
+  reinitKey?: string;
   data?: OutputData;
   onData?: (data: OutputData) => void;
   holderId?: string;
@@ -62,19 +62,34 @@ export class EditorWrapper extends React.PureComponent<WrapperProps> {
    */
   private defaultHolderId = 'editor-' + new Date().getTime();
 
+  // @ts-ignore
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      curReinitKey: null,
+    };
+  }
+
   componentDidMount() {
     this.initEditor();
   }
 
   async componentDidUpdate() {
-    const { reinitOnPropsChange } = this.props;
+    const { reinitKey } = this.props;
+    // @ts-ignore
+    const { curReinitKey } = this.state;
 
-    if (reinitOnPropsChange) {
+    if (!!reinitKey && !!curReinitKey && reinitKey !== curReinitKey) {
       const removed = await this.removeEditor();
 
       if (removed) {
         this.initEditor();
       }
+    }
+
+    if (!!reinitKey) {
+      this.setState({ curReinitKey: reinitKey });
     }
   }
 
