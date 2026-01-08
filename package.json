@@ -29,7 +29,7 @@
     "@types/react": "^16.9.3",
     "@types/react-dom": "^16.9.1",
     "docz": "^2.0.0-rc.44",
-    "microbundle": "^0.11.0",
+    "microbundle": "^0.15.1",
     "prettier": "1.16.4",
     "rimraf": "^2.6.3",
     "tslint": "^5.20.0",
